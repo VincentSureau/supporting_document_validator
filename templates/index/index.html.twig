@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<div class="container my-5">
+    <h1>Validateur de pièce d'identitée</h1>
+    {% include('partials/_flash.html.twig') %}
+    <p>Entrez le nom et le prénom, le validateur vérifiera si la pièce contient les informations fournies</p>
+    {% include('index/_form.html.twig') %}
+</div>
+{% endblock %}
